@@ -1,0 +1,25 @@
+.navbar-logo {
+  /* position: fixed;
+  left: 49%;
+  top: 0px; */
+}
+
+.navbar-content-left, .navbar-content-right {
+  position: absolute;
+  font-size: 28px;
+  font-family: 'Gamja Flower', cursive;
+}
+
+.navbar-content-left {
+  left: 12vw;
+}
+
+.navbar-content-right {
+  right: 12vw;
+}
+
+@media (max-width: 992px) {
+  .navbar-content-left, .navbar-content-right {
+    display: none;
+  }
+}
