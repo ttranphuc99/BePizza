@@ -38,3 +38,17 @@
   width: 90%;
   max-width: 446px;
 }
+
+.wrap-img-content1 {
+  overflow: hidden;
+  width: 75%;
+}
+
+.img-content1 {
+  width: 100%;
+  transition-duration: .5s;
+}
+
+.img-content1:hover {
+  transform: scale(1.2); 
+}
