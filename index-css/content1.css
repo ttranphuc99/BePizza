@@ -1,0 +1,35 @@
+.top-deco-content1 {
+  background-image: url("../index-img/content1/home_pizza2_decoration1.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 6px;
+  margin-top: -6px;
+  position: relative;
+}
+
+.bottom-deco-content1 {
+  background-image: url("../index-img/content1/home_pizza2_decoration2.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 6px;
+  margin-bottom: -6px;
+  position: relative;
+}
+
+.wrap-content1 {
+  width: 100%;
+  background-image: url("../index-img/footer/background-order.jpg");
+  /* padding: 0 !important; */
+}
+
+.info1-content1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #876C51;
+}
+
+.info2-content1 {
+  font-family: 'Crimson Text', serif;
+  font-size: 20px;
+  color: #888787;
+}
