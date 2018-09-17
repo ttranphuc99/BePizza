@@ -1,0 +1,18 @@
+.wrap-content2 {
+  width: 100%;
+  background-image: url("../index-img/content2/home_pizza2_sectionbg1.jpg");
+}
+
+.title-content2 {
+  color: white;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.info-content2 {
+  color: #A1A0A6;
+  font-size: 18px;
+  padding: 0px 20vw !important;
+  font-family: 'Roboto Slab', serif;
+}
