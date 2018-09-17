@@ -24,8 +24,9 @@
 
 .info1-content1 {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: 25px;
   color: #876C51;
+  font-weight: bold;
 }
 
 .info2-content1 {
@@ -51,4 +52,36 @@
 
 .img-content1:hover {
   transform: scale(1.2); 
+}
+
+.title1-info1 {
+  font-family: 'Lobster', cursive;
+  font-size: 35px;
+}
+
+.wrap-title-img {
+  padding: 20px 5px;
+  background-color: #F8F3EA;
+  border: 1px solid #ACA297;
+  text-align: center;
+  width: 75%;
+  font-family: 'Bangers', cursive;
+  font-size: 30px;
+  color: #626065;
+}
+
+@media (max-width: 500px) {
+  .wrap-title-img {
+    font-size: 25px;
+  }
+  .info2-content1, .title1-info1 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (max-width: 368px) {
+  .wrap-title-img {
+    font-size: 18px;
+  }
 }
