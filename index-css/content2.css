@@ -1,12 +1,14 @@
 .wrap-content2 {
   width: 100%;
+  height: 100%;
+  padding: 20px 0;
   background-image: url("../index-img/content2/home_pizza2_sectionbg1.jpg");
 }
 
 .title-content2 {
   color: white;
   font-family: 'Cutive Mono', monospace;
-  font-size: 45px;
+  font-size: 55px;
   font-weight: bold;
 }
 
@@ -15,4 +17,73 @@
   font-size: 18px;
   padding: 0px 20vw !important;
   font-family: 'Roboto Slab', serif;
+}
+
+.wrap-img-content2 {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-content2 {
+  width: 100%;
+}
+
+.wrap-info-img-content2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+.img-icon-content2 {
+  width: 25%;
+}
+
+.wrap-img-icon-content2 {
+  height: 85%;
+}
+
+.img-title-content2 {
+  margin-top: -23%;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.5vw;
+  color: white;
+}
+.wrap-img-icon-content2, .img-title-content2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrap-info-img-content2 {
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  transition-duration: .4s;
+}
+
+.wrap-img-content2:hover .wrap-info-img-content2  {
+  display: block;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .wrap-img-content2 {
+    margin: 15px 0;
+  }
+  .info-content2 {
+    margin: 0 !important;
+  }
+  .img-title-content2 {
+    font-size: 7.5vw;
+  }
+  .wrap-info-img-content2 {
+    opacity: 1;
+    background-color: rgba(0,0,0,0.4);
+    display: block;
+  }
+  .wrap-img-content2 {
+    padding: 0 !important;
+  }
 }
