@@ -9,3 +9,22 @@
   font-size: 40px;
   width: 100%;
 }
+
+.info-content3 {
+  padding: 0 20px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #506562;
+}
+
+.wrap-avatar-content3, .wrap-name-content3 {
+  width: 100%;
+  text-align: center;
+}
+
+.wrap-name-content3 {
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  color: #4D4637;
+}
