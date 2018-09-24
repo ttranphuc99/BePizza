@@ -33,11 +33,13 @@
   width: 100%;
   overflow: hidden;
   box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.75);
+  transition-duration: .4s;
 }
 
 .bnt-link-view-menu:hover {
   text-decoration: none;
   color: white;
+  transform: scale(1.1);
 }
 
 .bnt-link-view-menu:hover .bnt-view-menu::before {
@@ -50,4 +52,10 @@
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .info-view-menu {
+    margin-bottom: 40px;
+  }
 }
