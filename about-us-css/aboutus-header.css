@@ -1,0 +1,99 @@
+.header {
+  min-height: 100vh;
+  background-image: url("../about-us-img/header/home_pizza2_sectionbg5.jpg");
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #E4DCD2;
+  font-size: 75px;
+  text-align: center;
+  font-family: 'Contrail One', cursive;
+  letter-spacing: 5px;
+}
+
+.content {
+  background-image: url("../index-img/footer/background-footer.jpg");
+  position: relative;
+}
+
+.content-wrap-head-img {
+  transform: translateY(-15%);
+}
+
+.content-head-img {
+  width: 70vw;
+  max-width: 527px;
+}
+
+.content-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: #2C2930;
+  text-align: center;
+  font-weight: 1000;
+  margin-top: -50px;
+  padding-bottom: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  border-bottom: 2px dotted #2C2930;
+}
+
+.wrap-info > p {
+  color: black;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+}
+
+.wrap-info {
+  margin-bottom: 50px;
+}
+
+.info-img {
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .header {
+    min-height: 80vh;
+  }
+  .content-header {
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-header {
+    font-size: 60px;
+  }
+
+  .content-title {
+    margin-top: -20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-header {
+    font-size: 50px;
+  }
+
+  .content-title {
+    font-size: 30px;
+  }
+
+  .wrap-info > p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 352px) {
+  .content-header {
+    font-size: 40px;
+  }
+}
