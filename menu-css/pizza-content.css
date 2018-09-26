@@ -3,6 +3,7 @@
   color: #012333;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
 }
 
 .wrap-pizza-type {
@@ -57,16 +58,19 @@ h6 {
 
 .pizza-name {
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 15px;
   transition-duration: .4s;
+  height: 8.5vh;
 }
 
 .pizza-descrpt {
   font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  margin: 25px 0;
+  font-size: 17px;
+  margin: 15px 0;
   color: #012333;
   transition-duration: .4s;
+  height: 40%;
+  height: 10vh;
 }
 
 .bnt-add-to-cart {
@@ -85,6 +89,14 @@ h6 {
 
 .bnt-add-to-cart:hover {
   background-image: linear-gradient(to right, #400B13, #B6142C);
+}
+
+.title-menu {
+  justify-content: center;
+  font-size: 55px;
+  color: #C68225;
+  font-family: 'Shrikhand', cursive;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1160px) {
@@ -121,6 +133,12 @@ h6 {
   .type-pizza {
     font-size: 30px;
   }
+  .pizza-name {
+    font-size: 18px;
+  }
+  .title-menu {
+    font-size: 50px;
+  }
 }
 
 @media (max-width: 668px) {
@@ -131,7 +149,7 @@ h6 {
     font-size: 12px;
   }
   .pizza-name {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -140,9 +158,12 @@ h6 {
     font-size: 10px;
   }
   .pizza-name {
-    font-size: 15px;
+    font-size: 14px;
   }
   .pizza-descrpt {
     font-size: 12px;
+  }
+  .title-menu {
+    font-size: 45px;
   }
 }
