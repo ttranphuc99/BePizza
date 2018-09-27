@@ -61,6 +61,7 @@ h6 {
   margin-top: 15px;
   transition-duration: .4s;
   height: 8.5vh;
+  min-height: 50px;
 }
 
 .pizza-descrpt {
@@ -71,6 +72,7 @@ h6 {
   transition-duration: .4s;
   height: 40%;
   height: 10vh;
+  min-height: 70px;
 }
 
 .bnt-add-to-cart {
@@ -97,6 +99,7 @@ h6 {
   color: #C68225;
   font-family: 'Shrikhand', cursive;
   text-transform: uppercase;
+  text-shadow:5px 5px 10px #00FF00;
 }
 
 @media (max-width: 1160px) {

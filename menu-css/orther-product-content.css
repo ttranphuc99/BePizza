@@ -1,0 +1,22 @@
+.product-price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(229, 25, 55);
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .product-price {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 406px) {
+  .product-price {
+    font-size: 15px;
+  }
+}
