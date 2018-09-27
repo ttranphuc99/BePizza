@@ -1,0 +1,81 @@
+.photo-content {
+  background-image: url("../index-img/footer/background-order.jpg");
+}
+
+.img-content {
+  width: 95%;
+}
+
+.img-title-content {
+  width: 95%;
+  text-align: center;
+  padding: 5% 2px;
+  background-color: white;
+  border: 1px solid #ACA297;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #626065;
+  font-size: 23px;
+}
+
+.wrap-items {
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery-items {
+  width: 100%;
+  transition-duration: .4s;
+}
+
+.wrap-gallery {
+  padding: 8px;
+  width: 33.33%;
+  float: left;
+  cursor: pointer;
+}
+
+.wrap-gallery:hover .gallery-items {
+  transform: scale(1.2);
+}
+
+.clear {
+  clear: both;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.floatRight {
+  float: right;
+}
+
+@media (max-width: 992px) {
+  .img-title-content {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-title-content {
+    font-size: 20px;
+  }
+  .textRight {
+    text-align: left;
+  }
+  .floatRight {
+    float: none;
+  }
+  .img-title-content, .img-content {
+    width: 100%;
+  }
+  .wrap-gallery {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrap-gallery {
+    width: 100%;
+  }
+}
