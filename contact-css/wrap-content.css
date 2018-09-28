@@ -36,10 +36,52 @@
 
 .wrap-info2 {
   margin: 50px 0;
+  text-align: left;
+}
+
+.title-info2 {
+  font-family: 'Noto Serif', serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.head-info2 {
+  font-size: 18px;
+  font-family: 'Noto Serif', serif;
+  color: #8E755C;
+  margin: 0 0 20px 0;
+}
+
+.wrap-sub-content-info2 {
+  font-size: 17px;
+  font-family: 'Noto Serif', serif;
+  color: #587877;
+}
+
+.address-info2 {
+  margin-bottom: 1rem;
+  color: #8E755C;
+}
+
+.address-info2 p, .contact-info2 p {
+  margin: 0;
+}
+
+.hightlight-info2 {
+  color: #8E755C;
 }
 
 @media (max-width: 992px) {
   .wrap-content-contact {
     margin-top: 0;
+  }
+
+  .title-info2 {
+    margin: 20px 0;
+  }
+
+  .wrap-info2 {
+    text-align: justify;
   }
 }
