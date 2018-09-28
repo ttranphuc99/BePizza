@@ -1,0 +1,45 @@
+.wrap-content-contact {
+  background: url("../index-img/footer/background-footer.jpg");
+  margin-top: 97px;
+  padding: 50px 5vw;
+  text-align: center;
+}
+
+.wrap-info1 {
+  margin: 10px auto;
+  width: 100%;
+  background-color: #F8F3EA;
+  padding: 30px;
+}
+
+.title-info1 {
+  font-family: 'Noto Serif', serif;
+  margin: 30px 0;
+  font-size: 40px;
+}
+
+.content-info1 {
+  color: #7F7F7F;
+  font-family: 'Playfair Display', serif;
+  margin: 30px 0;
+}
+
+.phone-info1 {
+  color: #7B6852;
+  font-family: 'Noto Serif', serif;
+  font-size: 30px;
+}
+
+.img-info2 {
+  width: 100%;
+}
+
+.wrap-info2 {
+  margin: 50px 0;
+}
+
+@media (max-width: 992px) {
+  .wrap-content-contact {
+    margin-top: 0;
+  }
+}
