@@ -93,15 +93,6 @@ h6 {
   background-image: linear-gradient(to right, #400B13, #B6142C);
 }
 
-.title-menu {
-  justify-content: center;
-  font-size: 55px;
-  color: #C68225;
-  font-family: 'Shrikhand', cursive;
-  text-transform: uppercase;
-  text-shadow:5px 5px 10px #00FF00;
-}
-
 @media (max-width: 1160px) {
   .pizza-price {
     font-size: 20px;
@@ -139,9 +130,6 @@ h6 {
   .pizza-name {
     font-size: 18px;
   }
-  .title-menu {
-    font-size: 50px;
-  }
 }
 
 @media (max-width: 668px) {
@@ -165,8 +153,5 @@ h6 {
   }
   .pizza-descrpt {
     font-size: 12px;
-  }
-  .title-menu {
-    font-size: 45px;
   }
 }
