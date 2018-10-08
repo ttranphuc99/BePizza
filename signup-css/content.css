@@ -1,0 +1,22 @@
+.signup-container {
+  background-image: url("../signup-img/3557a5e1c942b53.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 95vh; 
+  margin-top: 90px;
+  position: relative;
+}
+
+.wrap-form {
+  position: absolute;
+  top: 10vh;
+  left: 5vw;
+  background-color: rgba(71, 100, 0, 0.5);
+  width: 30%;
+  padding: 50px 30px;
+}
+
+.form-label {
+  color: white;
+  font-weight: bold;
+}
