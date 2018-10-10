@@ -107,5 +107,7 @@
   .wrap-form {
     width: 90%;
     margin: 30px auto;
+    max-width: 500px;
+    min-width: 0;
   }
 }
