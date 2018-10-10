@@ -104,31 +104,31 @@
       <div class="form-title mb-5">Sign In</div>
       <!-- email -->
       <div class="wrap-field my-2">
-        <input type="email" placeholder="Email" required>
+        <input type="email" id="email-signup" placeholder="Email" required>
         <p class="signup-error" id="email-error"></p>
       </div>
 
       <!-- pass -->
       <div class="wrap-field my-2">
-        <input type="password" placeholder="Password" required>
-        <p class="signup-error" id="email-error"></p>
+        <input type="password" id="pass-signup" placeholder="Password" required>
+        <p class="signup-error" id="pass-error"></p>
       </div>
 
       <!-- confirm pass -->
       <div class="wrap-field my-1 wrap-signup">
-        <input type="password" placeholder="Confirm Password" required>
-        <p class="signup-error" id="email-error"></p>
+        <input type="password" id="con-pass-signup" placeholder="Confirm Password">
+        <p class="signup-error" id="con-pass-error"></p>
       </div>
 
       <!-- phone -->
       <div class="wrap-field my-1 wrap-signup">
-        <input type="number" placeholder="Phone Number" required>
+        <input type="number" id="phone-signup" placeholder="Phone Number">
         <p class="signup-error" id="phone-error"></p>
       </div>
 
       <!-- provice/city -->
       <div class="wrap-field my-1 wrap-signup">
-        <select required>
+        <select id="select-signup">
           <option value="" selected disabled hidden>City/Provice</option>
           <option value="HCM">Ho Chi Minh</option>
           <option value="HN">Ha Noi</option>
