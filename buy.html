@@ -24,7 +24,8 @@
 
   <!-- font -->
   <link href="https://fonts.googleapis.com/css?family=Philosopher|Gloria+Hallelujah|Noto+Serif+KR
-              |Pacifico" rel="stylesheet">
+              |Pacifico|Raleway"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -100,7 +101,7 @@
 
   <div class="signup-container">
     <form class="wrap-form">
-      <div class="form-title mb-4">Sign Up</div>
+      <div class="form-title mb-5">Sign In</div>
       <!-- email -->
       <div class="wrap-field my-2">
         <input type="email" placeholder="Email" required>
@@ -114,19 +115,19 @@
       </div>
 
       <!-- confirm pass -->
-      <div class="wrap-field my-2">
+      <div class="wrap-field my-1 wrap-signup">
         <input type="password" placeholder="Confirm Password" required>
         <p class="signup-error" id="email-error"></p>
       </div>
 
       <!-- phone -->
-      <div class="wrap-field my-2">
+      <div class="wrap-field my-1 wrap-signup">
         <input type="number" placeholder="Phone Number" required>
         <p class="signup-error" id="phone-error"></p>
       </div>
 
       <!-- provice/city -->
-      <div class="wrap-field my-2">
+      <div class="wrap-field my-1 wrap-signup">
         <select required>
           <option value="" selected disabled hidden>City/Provice</option>
           <option value="HCM">Ho Chi Minh</option>
@@ -136,16 +137,19 @@
         </select>
       </div>
 
-      <div class="row mb-3 mt-4">
-        <div class="col-lg-6 wrap-smt text-center">
-          <input type="submit" value="Sign Up">
-        </div>
-
-        <div class="col-lg-6 wrap-bnt text-center">
-          <a href="index.html"><div>Sign In</div></a>
-        </div>
+      <div class="row wrap-smt text-center" id="signin-wrap">
+        <div class="col-12"><input type="submit" value="Sign In"></div>
       </div>
-    </form>
+
+      <div class="row my-2">
+        <div class="col-12 text-center wrap-signup-des">Or don't have account?</div>
+      </div> 
+
+      <div class="row mb-4 wrap-smt text-center">
+        <div class="col-12"><input type="button" id="signup-bnt" value="Sign Up"></div>
+      </div>
+  </div>
+  </form>
   </div>
 
   <!-- footer -->
@@ -196,6 +200,7 @@
 
   <!-- javascript -->
   <script src="index-js/fixed-navbar-control.js"></script>
+  <script src="signup-js/show-form-signup.js"></script>
 </body>
 
 </html>
