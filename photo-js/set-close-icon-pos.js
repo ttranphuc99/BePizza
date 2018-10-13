@@ -2,10 +2,6 @@ $(window).resize(function() {
   setPos();
 });
 
-$(document).ready(function() {
-  setPos();
-}) 
-
 function setPos() {
   var width = $("#img-show").width()/2;
   var height = -($("#img-show").height()/2);
