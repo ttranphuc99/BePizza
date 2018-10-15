@@ -11,10 +11,12 @@ $(document).ready(function() {
     if (window.innerWidth >= 768) showImg(src);
     // console.log(this);
   });
-
   $(".wrap-close-icon").click(function() {
-    if (window.innerWidth >= 768) hideImg();
-  })
+    hideImg();
+  });
+  $(".wrap-slide-show").click(function() {
+    if (event.target == this) hideImg();
+  });
 });
 
 function showImg(src) {
