@@ -1,0 +1,122 @@
+.wrap-detail {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 20000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(14, 13, 13, 0.5);
+}
+
+.detail {
+  position: relative;
+  z-index: 2001;
+  width: 75vw;
+  height: auto;
+  background: #999 url("../menu-img/content/woodbg.png");
+  padding: 35px 50px;
+}
+
+.title-detail {
+  color: #0078AE;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.descrpt-detail {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.img-detail {
+  width: 80%;
+}
+
+.price-detail {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.title-size {
+  color: #0078AE;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.wrap-option {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+.option {
+  position: relative;
+  padding-left: 35px;
+}
+
+.option input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 23px;
+  width: 23px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.option input:checked ~ .checkmark {
+  background-color: #0078AE;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.option input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.option .checkmark:after {
+  top: 6.5px;
+  left: 6.5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.wrap-close-icon {
+  position: absolute;
+  font-size: 30px;
+  color: #B8B7B7;
+  z-index: 5000;
+  cursor: pointer;
+}
+
+.wrap-close-icon:hover {
+  color: #ffffff;
+}
+
+

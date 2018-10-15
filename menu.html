@@ -24,11 +24,13 @@
   <link rel="stylesheet" href="menu-css/pizza-content.css">
   <!-- other product menu -->
   <link rel="stylesheet" href="menu-css/orther-product-content.css">
+  <!-- detail -->
+  <link rel="stylesheet" href="menu-css/detail-product.css">
   <!-- end of css -->
 
   <!-- font -->
   <link href="https://fonts.googleapis.com/css?family=Philosopher|Gloria+Hallelujah|Noto+Serif+KR
-              |Old+Standard+TT|Montserrat:800|Roboto|Shrikhand|Contrail+One"
+              |Old+Standard+TT|Montserrat:800|Roboto|Shrikhand|Contrail+One|Montserrat"
     rel="stylesheet">
 </head>
 
@@ -204,16 +206,87 @@
               <img src="menu-img/content/pizza/signature/meat.png" class="pizza-img">
 
               <!-- name of pizza -->
-              <h5 class="pizza-name">meat lover</h5>
+              <h5 class="pizza-name">meat lovers</h5>
 
               <!-- description of pizza -->
-              <p class="pizza-descrpt">Peperoni, Ham, Italian Sausage, Beef topping, Bacon</p>
+              <p class="pizza-descrpt">Peperoni, Ham, Italian Sausage</p>
 
               <!-- bnt add to cart -->
               <button class="bnt-add-to-cart">
                 add to cart <i class="fas fa-shopping-cart"></i>
               </button>
             </center>
+            <div class="wrap-detail">
+              <div class="wrap-close-icon"><i class="fas fa-times"></i></div><br>
+              <div class="detail">
+                <div class="row">
+                  <div class="col-lg-6 mr-5">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <!-- pizza name -->
+                        <p class="title-detail">meat lovers</p>
+                        <!-- description -->
+                        <p class="descrpt-detail">Mozzarella cheese, Pizza Sauce, Bacon, Ham, Beef Cube, Italian
+                          Sausage, Pepperoni, Mexico Beef</p>
+                        <!-- image -->
+                        <center><img class="img-detail mt-4 mb-3" src="menu-img/content/pizza/signature/meat.png"></center>
+                        <!-- price -->
+                        <p class="price-detail">199,000 đ</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-5">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <p class="title-size">Choose Pizza Size</p>
+                        <div class="wrap-option">
+                          <label class="option">Medium 9-inch
+                            <input type="radio" name="size" checked>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br>
+                          <label class="option">Large 12-inch
+                            <input type="radio" name="size">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-5">
+                      <div class="col-lg-12">
+                        <p class="title-size">Choose Pizza Crust</p>
+                        <div class="wrap-option">
+                          <label class="option">Thin Crust
+                            <input type="radio" name="curst" checked>
+                            <span class="checkmark"></span>
+                          </label>
+                          <br>
+                          <label class="option">Hand Tossed
+                            <input type="radio" name="curst">
+                            <span class="checkmark"></span>
+                          </label>
+                          <br>
+                          <label class="option">New York Curst
+                            <input type="radio" name="curst">
+                            <span class="checkmark"></span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row mt-5">
+                      <div class="col-lg-12">
+                        <button class="bnt-add-to-cart" style="background-color: #B6142C">
+                          add to cart <i class="fas fa-shopping-cart"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="pizza">
@@ -669,6 +742,7 @@
 
   <!-- javascript -->
   <script src="index-js/fixed-navbar-control.js"></script>
+  <script src="menu-js/set-popup.js"></script>
 </body>
 
 </html>
