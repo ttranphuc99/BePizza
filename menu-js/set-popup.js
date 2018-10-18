@@ -44,7 +44,7 @@ $(".size12").click(function() {
   }
 });
 
-$(".size-7").click(function() {
+$(".size7").click(function() {
   if (index <= 18) {
     $(".price-detail").text("79,000 đ");
   } else {
