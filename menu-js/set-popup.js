@@ -1,18 +1,60 @@
+var index;
 $(".bnt-add-to-cart").click(function() {
-  var index = $(".bnt-add-to-cart").index(this);
+  index = $(".bnt-add-to-cart").index(this);
 
   if (index % 2 == 0) {
     $(".wrap-detail").eq(index/2).css("display", "flex");
     setPos(index/2);
+    $("body").css("overflow", "hidden");
   }
 
-  $(window).resize(function() {
-    setPos(index/2);
-  });
+  $(".size9").prop("checked", "checked");
+  $(".crust-thin").prop("checked", "checked");
+
+  if (index <= 8) {
+    $(".price-detail").text("199,000 đ");
+  } else if (index <= 18) {
+    $(".price-detail").text("149,000 đ");
+  } else {
+    $(".price-detail").text("129,000 đ");
+  }
+});
+
+$(window).resize(function() {
+  setPos(index/2);
+});
+
+$(".size9").click(function() {
+  if (index <= 8) {
+    $(".price-detail").text("199,000 đ");
+  } else if (index <= 18) {
+    $(".price-detail").text("149,000 đ");
+  } else {
+    $(".price-detail").text("129,000 đ");
+  }
+});
+
+$(".size12").click(function() {
+  if (index <= 8) {
+    $(".price-detail").text("299,000 đ");
+  } else if (index <= 18) {
+    $(".price-detail").text("229,000 đ");
+  } else {
+    $(".price-detail").text("189,000 đ");
+  }
+});
+
+$(".size-7").click(function() {
+  if (index <= 18) {
+    $(".price-detail").text("79,000 đ");
+  } else {
+    $(".price-detail").text("59,000 đ");
+  }
 });
 
 $(".wrap-close-icon").click(function() {
   $(".wrap-detail").css("display", "none");
+  $("body").css("overflow", "unset");
 });
 
 function setPos(index) {

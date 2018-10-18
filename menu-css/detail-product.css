@@ -18,6 +18,8 @@
   height: auto;
   background: #999 url("../menu-img/content/woodbg.png");
   padding: 35px 50px;
+  max-height: 90vh;
+  overflow: auto;
 }
 
 .title-detail {
@@ -117,6 +119,37 @@
 
 .wrap-close-icon:hover {
   color: #ffffff;
+}
+
+@media (max-width: 550px) {
+  .detail {
+    width: 90vw;
+  }
+  .title-detail {
+    font-size: 23px;
+  }
+  .descrpt-detail {
+    font-size: 15px;
+  }
+  .price-detail {
+    font-size: 20px;
+  }
+  .title-size {
+    font-size: 15px;
+  }
+  .option {
+    font-size: 14px;
+  }
+  .checkmark {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .checkmark:after {
+    top: 5.5px !important;
+    left: 5px !important;
+    width: 8px !important;
+    height: 8px !important;
+  }
 }
 
 
