@@ -1,0 +1,59 @@
+.shop-cart {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  position: sticky;
+  top: 170px;
+}
+
+.wrap-voucher::before {
+  content: "";
+  display: block;
+  background: url("../menu-img/cart/rangcua.png") repeat-x;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  top: -6px;
+}
+
+.wrap-voucher {
+  background-color: #04354C;
+  padding: 20px 0 0;
+}
+
+.input-voucher {
+  width: 100%;
+  margin: 0 auto;
+  padding: 6px 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+}
+
+.input-voucher:focus {
+  outline: none;
+}
+
+.voucher-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  color: #0078AE;
+  padding: 0 20px;
+  font-weight: bold;
+}
+
+.wrap-voucher p {
+  padding: 0 20px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 15px 0 0;
+}
+
+.wrap-input-voucher {
+  padding: 20px;
+}
+
+.cart {
+  background-color: white;
+  padding: 20px;
+}
