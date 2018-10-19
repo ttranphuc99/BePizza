@@ -1,6 +1,6 @@
 .shop-cart {
   width: 100%;
-  max-width: 350px;
+  max-width: 450px;
   margin: auto;
   position: sticky;
   top: 170px;
@@ -55,5 +55,109 @@
 
 .cart {
   background-color: white;
-  padding: 20px;
+  padding: 10px 20px;
+}
+
+.cart-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #E51937;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.total-title, .total-price {
+  font-family: 'Montserrat', sans-serif;
+  color: #E51937;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.check-out {
+  background: #04354C;
+  padding: 20px 0;
+}
+
+.check-out::after {
+  content: "";
+  display: block;
+  background: url("../menu-img/cart/rangcua2.png") repeat-x;
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: -10px;
+}
+
+.check-out input {
+  width: 85%;
+  margin: 0 auto;
+  display: block;
+}
+
+.total-price span {
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.check-out input {
+  border: none;
+  background-color: #0078AE;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px 0;
+  border-radius: 5px;
+  transition-duration: .4s;
+}
+
+.check-out input:hover {
+  background-image: linear-gradient(to right, #400B13, #B6142C);
+  cursor: pointer;
+}
+
+.wrap-order {
+  background-color: #ffffff;
+  padding: 5px 0 7px;
+  border-bottom: 1px dotted #400B13;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrap-order-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.wrap-price {
+  font-style: italic;
+  text-align: right;
+}
+
+.remove-order {
+  width: 30%;
+  padding: 3px 0;
+  text-align: center;
+  color: white;
+  background: #CCCCCC;
+  /* margin-top: 20px; */
+}
+
+.remove-order:hover {
+  cursor: pointer;
+}
+
+.quantity {
+  padding: 5px 10px;
+}
+
+.quantity-control {
+  text-align: center;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.des-quantity, .inc-quantity {
+  font-size: 13px;
+  color: #B6142C;
+  cursor: pointer;
 }
