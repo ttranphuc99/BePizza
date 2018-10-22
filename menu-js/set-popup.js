@@ -6,22 +6,25 @@ $(".bnt-add-to-cart").click(function() {
     $(".wrap-detail").eq(index/2).css("display", "flex");
     setPos(index/2);
     $("body").css("overflow", "hidden");
-  }
+    $(".size9").eq(index/2).prop("checked", "checked");
+    $(".crust-thin").eq(index/2).prop("checked", "checked");
 
-  $(".size9").prop("checked", "checked");
-  $(".crust-thin").prop("checked", "checked");
-
-  if (index <= 8) {
-    $(".price-detail").text("199,000 đ");
-  } else if (index <= 18) {
-    $(".price-detail").text("149,000 đ");
-  } else {
-    $(".price-detail").text("129,000 đ");
+    if (index <= 8) {
+      $(".price-detail").eq(index/2).text("199,000 đ");
+    } else if (index <= 18) {
+      $(".price-detail").eq(index/2).text("149,000 đ");
+    } else {
+      $(".price-detail").eq(index/2).text("129,000 đ");
+    }
   }
 });
 
 $(window).resize(function() {
-  setPos(index/2);
+  if (index != undefined) {
+    if ($(".wrap-detail").eq(index/2).css("display") == "flex") { 
+      setPos(index/2);
+    }
+  }
 });
 
 $(".size9").click(function() {

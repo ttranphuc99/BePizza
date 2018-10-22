@@ -56,6 +56,8 @@
 .cart {
   background-color: white;
   padding: 10px 20px;
+  max-height: 40vh;
+  overflow-y: auto;
 }
 
 .cart-title {
@@ -146,7 +148,7 @@
 }
 
 .quantity {
-  padding: 5px 10px;
+  padding: 5px 0px;
 }
 
 .quantity-control {
@@ -160,4 +162,39 @@
   font-size: 13px;
   color: #B6142C;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .quantity {
+    padding: 5px 15px;
+  }
+  .cart {
+    max-height: unset;
+  }
+}
+
+@media (max-width: 410px) {
+  .quantity {
+    padding: 5px 0px;
+  }
+  
+  .remove-order {
+    font-size: 14px;
+  }
+
+  .wrap-order-name {
+    font-size: 12px;
+  }
+
+  .wrap-price {
+    font-size: 13px;
+  }
+
+  .total-price {
+    font-size: 14px;
+  }
+
+  .total-price span {
+    font-size: 12px;
+  }
 }
