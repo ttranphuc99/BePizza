@@ -174,10 +174,6 @@ function setTotal() {
   $(".total-price").html(str);
 }
 
-$(".cart-content").on("DOMSubtreeModified", function() {
-  setTotal();
-});
-
 $(".add-cart").click(function() {
   var index = $(".add-cart").index(this);
 
@@ -216,7 +212,7 @@ $(".add-cart").click(function() {
       '</div>' +
     '</div>' +
     '<div class="remove-order">Remove</div>' +
-  '</div>'
+  '</div>';
 
   var len = $(".wrap-order").length;
   var str = pizza[index].toString();
@@ -232,6 +228,9 @@ $(".add-cart").click(function() {
   }
   
   if (flag) $(".cart-content").append(element);
+
+  $(".wrap-detail").css("display", "none");
+  $("body").css("overflow", "unset");
 });
 
 $(document).on('click', '.des-quantity', function() {
@@ -255,4 +254,62 @@ $(document).on('click', '.remove-order', function() {
   var index = $(".remove-order").index(this);
   
   $(".wrap-order").eq(index).remove();
+});
+
+var ready = false;
+
+$(document).ready(function() {
+  var flag = true;
+  if (JSON.parse(localStorage.getItem(0)) === null) flag = false;
+  var count = 0;
+  while (flag) {
+    var object = JSON.parse(localStorage.getItem(count));
+
+    var element = 
+    '<div class="wrap-order">' +
+      '<div class="wrap-order-name">' + object.str + '</div>' +
+      '<div class="wrap-quantity my-3 row">' +
+        '<div class="col-6">' +
+          '<div class="quantity-control">' +
+            '<span class="des-quantity"><i class="fas fa-minus"></i></span>' +
+            '<span class="quantity mx-3">' + object.quantity + '</span>' +
+            '<span class="inc-quantity"><i class="fas fa-plus"></i></span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="col-6">' +
+          '<div class="wrap-price">' + object.price + '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="remove-order">Remove</div>' +
+    '</div>';
+
+    $(".cart-content").append(element);
+
+    count++;
+    if (JSON.parse(localStorage.getItem(count)) === null) flag = false;
+  }
+  ready = true;
+  setTotal();
+});
+
+$(".cart-content").on("DOMSubtreeModified", function() {
+  if (ready) {
+    setTotal();
+    localStorage.clear();
+    for (var i = 0; i < $(".wrap-order").length; i++) {
+      var str = $(".wrap-order-name").eq(i).text();
+      var quantity = $(".quantity").eq(i).text();
+      var price = $(".wrap-price").eq(i).text();
+
+      var object = {
+        str : str,
+        quantity: quantity,
+        price : price
+      };
+
+      localStorage.setItem(i, JSON.stringify(object));
+    }
+    console.log(i);
+    localStorage.setItem(i, null);
+  }
 });
