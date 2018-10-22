@@ -141,6 +141,11 @@
   color: white;
   background: #CCCCCC;
   /* margin-top: 20px; */
+  transition-duration: .4s;
+}
+
+.remove-order:hover {
+  background-color: #E51937;
 }
 
 .remove-order:hover {

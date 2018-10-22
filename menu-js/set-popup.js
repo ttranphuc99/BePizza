@@ -3,26 +3,26 @@ $(".bnt-add-to-cart").click(function() {
   index = $(".bnt-add-to-cart").index(this);
 
   if (index % 2 == 0) {
-    $(".wrap-detail").eq(index/2).css("display", "flex");
-    setPos(index/2);
+    $(".wrap-detail").eq(parseInt(index/2)).css("display", "flex");
+    setPos(parseInt(index/2));
     $("body").css("overflow", "hidden");
-    $(".size9").eq(index/2).prop("checked", "checked");
-    $(".crust-thin").eq(index/2).prop("checked", "checked");
+    $(".size9").eq(parseInt(index/2)).prop("checked", "checked");
+    $(".crust-thin").eq(parseInt(index/2)).prop("checked", "checked");
 
     if (index <= 8) {
-      $(".price-detail").eq(index/2).text("199,000 đ");
+      $(".price-detail").eq(parseInt(index/2)).text("199,000 đ");
     } else if (index <= 18) {
-      $(".price-detail").eq(index/2).text("149,000 đ");
+      $(".price-detail").eq(parseInt(index/2)).text("149,000 đ");
     } else {
-      $(".price-detail").eq(index/2).text("129,000 đ");
+      $(".price-detail").eq(parseInt(index/2)).text("129,000 đ");
     }
   }
 });
 
 $(window).resize(function() {
   if (index != undefined) {
-    if ($(".wrap-detail").eq(index/2).css("display") == "flex") { 
-      setPos(index/2);
+    if ($(".wrap-detail").eq(parseInt(index/2)).css("display") == "flex") { 
+      setPos(parseInt(index/2));
     }
   }
 });
