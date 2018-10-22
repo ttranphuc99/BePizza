@@ -112,16 +112,6 @@ pizza[10] = {
 };
 
 pizza[11] = {
-  name : "CHEESE MANIA",
-  size : "",
-  crust : "",
-  price : "",
-  toString : function() {
-    return this.size + " " + this.crust + " " + this.name;
-  }
-};
-
-pizza[12] = {
   name : "HAWAIIAN",
   size : "",
   crust : "",
@@ -131,7 +121,7 @@ pizza[12] = {
   }
 };
 
-pizza[13] = {
+pizza[12] = {
   name : "KID MANIA",
   size : "",
   crust : "",
@@ -141,8 +131,18 @@ pizza[13] = {
   }
 };
 
+pizza[13] = {
+  name : "VEGGIE MANIA",
+  size : "",
+  crust : "",
+  price : "",
+  toString : function() {
+    return this.size + " " + this.crust + " " + this.name;
+  }
+};
+
 pizza[14] = {
-  name : "BEFFIE MANIA",
+  name : "CHESSE MANIA",
   size : "",
   crust : "",
   price : "",
@@ -251,8 +251,8 @@ $(document).on('click', '.inc-quantity', function() {
   $(".quantity").eq(index).text(num);
 });
 
-$(".remove-order").click(function() {
+$(document).on('click', '.remove-order', function() {
   var index = $(".remove-order").index(this);
-  console.log(index);
+  
   $(".wrap-order").eq(index).remove();
 });
