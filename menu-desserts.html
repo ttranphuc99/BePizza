@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="menu-css/pizza-content.css">
   <!-- other product menu -->
   <link rel="stylesheet" href="menu-css/orther-product-content.css">
+  <!-- cart -->
+  <link rel="stylesheet" href="menu-css/cart.css">
   <!-- end of css -->
 
   <!-- font -->
@@ -156,7 +158,31 @@
 
       <!-- cart -->
       <div class="col-lg-3">
+        <form class="shop-cart mt-5">
+          <div class="wrap-cart">
+            <div class="wrap-voucher">
+              <div class="voucher-title">VOUCHER CODE</div>
+              <p>Please enter voucher code before checking out</p>
+              <div class="wrap-input-voucher"><input type="text" placeholder="Voucher Code" class="input-voucher"></div>
+            </div>
 
+            <div class="cart">
+              <div class="cart-title">ORDER DETAIL</div>
+              <div class="cart-content">
+              </div>
+              <div class="wrap-total">
+                <div class="row mt-2">
+                  <div class="col-6 text-left total-title">TOTAL</div>
+                  <div class="col-6 text-right total-price">0 <span>đ</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="check-out">
+              <input class="checkout-smt" type="button" value="CHECKOUT">
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -209,6 +235,8 @@
 
   <!-- javascript -->
   <script src="index-js/fixed-navbar-control.js"></script>
+  <script src="menu-js/set-cart.js"></script>
+  <script src="menu-js/set-cart-other.js"></script>
 </body>
 
 </html>
