@@ -36,4 +36,6 @@ $(".bnt-add-to-cart").click(function() {
   }
   
   if (flag) $(".cart-content").append(element);
+
+  showSnackbar("Added to cart successfully!");
 })

@@ -231,6 +231,7 @@ $(".add-cart").click(function() {
 
   $(".wrap-detail").css("display", "none");
   $("body").css("overflow", "unset");
+  showSnackbar("Added to cart successfully!");
 });
 
 $(document).on('click', '.des-quantity', function() {
@@ -254,6 +255,8 @@ $(document).on('click', '.remove-order', function() {
   var index = $(".remove-order").index(this);
   
   $(".wrap-order").eq(index).remove();
+
+  showSnackbar("Removed from cart successfully!");
 });
 
 var ready = false;
@@ -309,7 +312,7 @@ $(".cart-content").on("DOMSubtreeModified", function() {
 
       localStorage.setItem(i, JSON.stringify(object));
     }
-    console.log(i);
+    
     localStorage.setItem(i, null);
   }
 });

@@ -168,33 +168,6 @@
   cursor: pointer;
 }
 
-.wrap-cart-icon {
-  position: fixed;
-  bottom: 30px;
-  right: 10px;
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 500;
-}
-
-.cart-icon {
-  background-color: rgba(132, 94, 194, 0.5);
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cart-img {
-  width: 80%;
-  height: 80%;
-}
-
 @media (max-width: 1200px) {
   .quantity {
     padding: 5px 15px;
